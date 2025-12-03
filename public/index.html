@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Multimedia Channel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎥 Real-Time Multimedia Communication</h1>
+    <input type="text" id="roomInput" placeholder="Enter Room ID" />
+    <button id="joinBtn">Join Room</button>
+
+    <div id="video-container" class="hidden">
+      <video id="localVideo" autoplay playsinline muted></video>
+      <video id="remoteVideo" autoplay playsinline></video>
+
+      <div class="controls">
+        <button id="muteBtn">🔇 Mute</button>
+        <button id="cameraBtn">🎥 Off</button>
+        <button id="endBtn">❌ End</button>
+      </div>
+    </div>
+
+    <div id="chat-container" class="hidden">
+      <div id="messages"></div>
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  background: radial-gradient(circle, #1a1a2e, #16213e);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #00fff5;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 8px #00fff5;
+}
+
+input, button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  background: linear-gradient(90deg, #00adb5, #00fff5);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #00fff5;
+}
+
+.hidden {
+  display: none;
+}
+
+#video-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+video {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #00fff5;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#chat-container {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#messages {
+  height: 150px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 5px;
+}
+
+#messages div {
+  background: rgba(0, 255, 255, 0.1);
+  margin: 3px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
